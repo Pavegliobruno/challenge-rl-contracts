@@ -7,10 +7,10 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 
   const { deployer } = await getNamedAccounts();
 
-  await deploy('ChallengeToken', {
+  await deploy('ERC20TokenContract', {
     from: deployer,
     log: true,
-    args: ['ChallengeToken', 'CGT', 100],
+    args: ['ERC20TokenContract', 'CGT', 100],
   }); 
 
 /*   await deploy('DAO', {
@@ -21,5 +21,5 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 
 export default func;
 
-func.tags = ['ChallengeToken']; 
+func.tags = ['ERC20TokenContract']; 
 /* func.tags = ['DAO']; */

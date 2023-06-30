@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
-contract ChallengeToken {
+contract ERC20TokenContract {
     string public name;
     string public symbol;
     uint256 public totalSupply;
